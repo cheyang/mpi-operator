@@ -48,6 +48,11 @@ type MPIJobSpec struct {
 	// +optional
 	LauncherOnMaster bool `json:"launcherOnMaster,omitempty"`
 
+	// volume mounts on the launcher.
+	// Optional: Default to true
+	// +optional
+	MountsOnLauncher bool `json:"mountsOnLauncher,omitempty"`
+
 	// Optional number of retries before marking this job failed.
 	// Defaults to 6
 	// +optional
